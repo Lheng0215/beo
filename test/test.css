@@ -1,0 +1,37 @@
+.top-box{
+	width: 200px;
+	height: 70px;
+	/*background: rgb(153,204,51)；*/
+	background: green;
+	margin: 10px;
+}
+.box{
+	width: 200px;
+	/*height: 200px;*/
+	background: blue;
+	margin: 20px 10px 20px 10px;
+	position: relative;
+	overflow: hidden;
+}
+.normal-box{
+	width: 20px;
+	height: 20px;
+	background: purple;
+	margin-top: 10px;
+	margin-left: 20px;
+	float: left;
+
+}
+.free-box{
+	width: 77px;
+	height: 77px;
+	margin: 100px;
+	position: absolute;
+	background: yellow;
+}
+.bottom{
+	width: 200px;
+	height: 50px;
+	background: pink;
+	margin: 10px;
+}
