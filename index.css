@@ -1,250 +1,471 @@
-*{
-	margin: 0px;
-	box-sizing: border-box;
-}
-body{
-	/*font-family: SimHei,"黑体", Hiragino Sans GB, "冬青黑体", sans-serif;*/
-;
-}
-.container{
-	width: 1024px;
-	margin:  0 auto;
-	overflow: hidden;
-	position: relative;
-}
-.header-box{
-	overflow: hidden;
-	height: 100vh;
-	background: #192314;
-	position: relative;
-}
-.header-pic-box{
-	width: 652px;
-	height: 502px;
-	background:url(green-beosound-shape-desktop.jpg);
-	background-size: cover;
-	float:right;
-}
-.header-text-box{
-	width: 512px;
-	height: 194px;
-	/*background: purple;*/
-	position: absolute;
-	left: 100px;
-	top: 145px;
-	color: #FFF;
-	font-size: 12px;
-}
-.description{
-	line-height: 24px;
-	margin-bottom: 10px;
-	/*字之间的间距*/
-	letter-spacing: 2px;
-	
-}
-.title{
-	/*是否加粗*/
-	font-weight: normal;
-	letter-spacing: 3.75px;
-	font-size: 30px;
-	line-height:39px;
-	margin-top: 15px;
-	margin-bottom: 24px;
-}
-.small_desc{
-	font-size: 13px;
-	line-height: 21px;
-	margin-bottom: 20px;
-}
-.button{
-	display: block;
-	width: 282px;
-	line-height: 21px;
-	margin: 8px 0px;
-	padding: 10px 40px;
-	background-color: rgba(255,255,255,0.1);
-	color: #FFF;
-	text-decoration: none;
-}
-.banner-box{
-	height: 405px;
-	padding-bottom: 100px;
-	background: url(img-bg-1350.jpg);
-	background-size: 100% auto;
-	background-position: 0 -158px;
-
-}
-.product-box{
-	width: 705px;
-	height: 353px;
-	margin: 0 auto;
-	margin-top: -48px;
-	position: relative;
-	z-index: 100;
-}
-.product-item{
-	float: left;
-	width:235px;
-	height: 353px;
-	position: relative;
-}
-.product-item img{
-
-	width: 100% ;
-}
-.product-item h4{
-	position: absolute;
-	top: 15px;
-	left: 20px;
-	color: #FFF;
-	font-size: 18px;
-	font-weight: 500px;
-	line-height: 24px;
-}
-.top-menu{
-	width: 100%;
-	height: 57px;
-	position: absolute;
-	padding: 0 22px;
-	/*弹性布局*/
-	display: flex;
-	justify-content: space-between;
-	z-index: 2000;
-	left: 0;
-	top: 0;
-}
-.left,.right{
-	height: 100%;
-	width: 128px;
-	line-height: 57px;
-	font-size: 12px;
-	color: #FFF;
-	text-align: center
-}
-.left{
-	background:url(product.png);
-	background-repeat: no-repeat;
-	background-position: left center;
-}
-.right{
-	background:url(menu.png);
-	background-repeat: no-repeat;
-	background-position: right center;
-}
-.center{
-	height: 100%;
-	line-height: 57px;
-	width: 190px;
-	color: #fff;
-	font-size:16px;
-	font-weight: 500;
-	text-align: center;
-	letter-spacing: 2.5px;
-}
-.title-box{
-	text-align: center;
-	padding-top: 90px;
-	height: 318px;
-}
-.title-box h6{
-	font-size: 12px;
-	font-weight:normal;
-	letter-spacing: 2px;
-	line-height: 13px;
-	margin: 12px 0 18px 0;
-}
-.title-box h2{
-	margin: 25px 0 40px 0;
-	font-size: 50px;
-	font-weight: normal;
-	letter-spacing: 4px;
-	line-height: 60px;
-}
-.product-list{
-	margin: 0 auto;
-	display: flex;
-	/*换行*/
-	flex-wrap: wrap;	
-}
-.product{
-	width: 512px;
-	height: 512px;
-	/*border: 2px solid #000;*/
-	position: relative;
-}
-.product:nth-child(1){
-	background: url(beosound-shape-mobile.jpg);
-	background-size:100% auto; 
-}
-.product:nth-child(2){
-	background: url(beovision-eclipse-mobile.jpg);
-	background-size:100% auto; 
-}
-.product:nth-child(3){
-	background: url(beolab-50-mobile.jpg);
-	background-size:100% auto; 
-}
-.product:nth-child(4){
-	background: url(beoplay-p6-categories-mobile-2.jpg);
-	background-size:100% auto; 
-}
-.product:nth-child(5){
-	background: url(beosound-core-mobile.jpg);
-	background-size:100% auto; 
-}
-.product:nth-child(6){
-	background: url(beoplay-h9i-mobile.jpg);
-	background-size:100% auto; 
-}
-.product h4{
-	position: absolute;
-	top: 15px;
-	left: 20px;
-	color: #FFF;
-	font-size: 18px;
-	font-weight: 500px;
-	line-height: 24px;
-}
-.card-story{
-	margin: 0 auto;
-	display: flex;
-	/*position: relative;*/
-}
-.card{
-	margin: 0 auto;
-	padding: 58px;
-	position: relative;
-}
-.card img{
-	width: 100%
-}
-.card1{
-	float: left;
-	width: 176px;
-	height: 324px;
-	/*border:3px solid #000;*/
-}
-.card2{
-	float: left;
-	width: 352px;
-	height: 324px;
-	/*border:3px solid #000;*/
-}
-.card h4{
-	top: 15px;
-	left: 20px;
-	color: #000;
-	font-size: 14px;
-	font-weight: normal;
-	line-height: 50px;
-}
-.card p{
-	top: 15px;
-	left: 20px;
-	color: #000;
-	font-size: 10px;
-	font-weight: 100;
-	line-height: 20px;
-	padding:0 4px;
+* {
+    margin: 0;
+    box-sizing: border-box;
 }
 
+body {
+    /*font-family: SimHei,"黑体", "冬青黑体", sans-serif;*/;
+}
+
+.container {
+    width: 1024px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.header-box {
+    overflow: hidden;
+    height: 100vh;
+    background: #192314;
+    position: relative;
+}
+
+.header-pic-box {
+    width: 652px;
+    height: 502px;
+    background: url(img/green-beosound-shape-desktop.jpg);
+    background-size: cover;
+    float: right;
+}
+
+.header-text-box {
+    width: 512px;
+    height: 194px;
+    /*background: purple;*/
+    position: absolute;
+    left: 100px;
+    top: 145px;
+    color: #FFF;
+    font-size: 12px;
+}
+
+.description {
+    line-height: 24px;
+    margin-bottom: 10px;
+    /*字之间的间距*/
+    letter-spacing: 2px;
+
+}
+
+.title {
+    /*是否加粗*/
+    font-weight: normal;
+    letter-spacing: 4px;
+    font-size: 30px;
+    line-height: 39px;
+    margin-top: 15px;
+    margin-bottom: 24px;
+}
+
+.small_desc {
+    font-size: 13px;
+    line-height: 21px;
+    margin-bottom: 20px;
+}
+
+.button {
+
+    display: block;
+    width: 250px;
+    line-height: 21px;
+    margin: 8px 0;
+    padding: 10px 40px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #FFF;
+    text-decoration: none;
+}
+
+.banner-box {
+    height: 405px;
+    padding-bottom: 100px;
+    background: url(img/img-bg-1350.jpg) 0 -158px/ 100% auto;
+
+}
+
+.product-box {
+    width: 705px;
+    height: 353px;
+    margin: -48px auto 0 auto;
+    position: relative;
+    z-index: 100;
+}
+
+.product-item {
+    float: left;
+    width: 235px;
+    height: 353px;
+    position: relative;
+}
+
+.product-item img {
+
+    width: 100%;
+}
+
+.product-item h4 {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.top-menu {
+    width: 100%;
+    height: 57px;
+    position: absolute;
+    padding: 0 22px;
+    /*弹性布局*/
+    display: flex;
+    justify-content: space-between;
+    z-index: 2000;
+    left: 0;
+    top: 0;
+}
+
+.top-menu .left, .top-menu .right {
+    height: 100%;
+    width: 128px;
+    line-height: 57px;
+    font-size: 12px;
+    color: #FFF;
+    text-align: center
+}
+
+.top-menu .left {
+    background: url(img/product.png) no-repeat left center;;
+}
+
+.top-menu .right {
+    background: url(img/menu.png) no-repeat right center;;
+}
+
+.center {
+    height: 100%;
+    line-height: 57px;
+    width: 190px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+.title-box {
+    text-align: center;
+    padding-top: 90px;
+    height: 318px;
+}
+
+.title-box h6 {
+    font-size: 12px;
+    font-weight: normal;
+    letter-spacing: 2px;
+    line-height: 13px;
+    margin: 12px 0 18px 0;
+}
+
+.title-box h2 {
+    margin: 25px 0 40px 0;
+    font-size: 50px;
+    font-weight: normal;
+    letter-spacing: 4px;
+    line-height: 60px;
+}
+
+.product-list {
+    margin: 0 auto;
+    display: flex;
+    /*换行*/
+    flex-wrap: wrap;
+}
+
+.product {
+    width: 512px;
+    height: 512px;
+    /*border: 2px solid #000;*/
+    position: relative;
+}
+
+.product:nth-child(1) {
+    background: url(img/beosound-shape-mobile.jpg);
+    background-size: 100% auto;
+}
+
+.product:nth-child(2) {
+    background: url(img/beovision-eclipse-mobile.jpg);
+    background-size: 100% auto;
+}
+
+.product:nth-child(3) {
+    background: url(img/beolab-50-mobile.jpg);
+    background-size: 100% auto;
+}
+
+.product:nth-child(4) {
+    background: url(img/beoplay-p6-categories-mobile-2.jpg);
+    background-size: 100% auto;
+}
+
+.product:nth-child(5) {
+    background: url(img/beosound-core-mobile.jpg);
+    background-size: 100% auto;
+}
+
+.product:nth-child(6) {
+    background: url(img/beoplay-h9i-mobile.jpg);
+    background-size: 100% auto;
+}
+
+.product h4 {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.card-story {
+    margin: 0 auto;
+    display: flex;
+    /*position: relative;*/
+}
+
+.card {
+    margin: 0 auto;
+    padding: 58px;
+    position: relative;
+}
+
+.card img {
+    width: 100%
+}
+
+.card1 {
+    float: left;
+    width: 176px;
+    height: 324px;
+    /*border:3px solid #000;*/
+}
+
+.card2 {
+    float: left;
+    width: 352px;
+    height: 324px;
+    /*border:3px solid #000;*/
+}
+
+.card h4 {
+    top: 15px;
+    left: 20px;
+    color: #000;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 50px;
+}
+
+.card p {
+    top: 15px;
+    left: 20px;
+    color: #000;
+    font-size: 10px;
+    font-weight: 100;
+    line-height: 20px;
+    padding: 0 4px;
+}
+
+.info-box {
+    padding: 0 14px;
+    height: 509px;
+    display: flex;
+    border-top: 1px solid #F2F2F2;
+}
+
+.info-item {
+    padding-top: 80px;
+    width: 498px;
+    height: 100%;
+    text-align: center;
+}
+
+.info-item .icon {
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    margin: 0 auto 30px auto;
+}
+
+.info-item:nth-child(1) {
+    border-right: 1px solid #F2F2F2;
+}
+
+.info-item:nth-child(1) .icon {
+    background: #000 url("img/new.png") no-repeat center center;
+}
+
+.info-item:nth-child(2) .icon {
+    background: #000 url("img/location.png") no-repeat center center;
+}
+
+.info-item h5 {
+    margin-bottom: 12px;
+    line-height: 17px;
+    font-weight: 500;
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+
+.info-item h6 {
+    width: 290px;
+    margin: 18px auto;
+    line-height: 20px;
+    font-size: 12px;
+    color: #888;
+    font-weight: normal;
+}
+
+.info-item .button {
+    width: 200px;
+    height: 41px;
+    margin: 8px auto;
+    background: rgba(0, 0, 0, 0.1);
+    color: #000;
+    font-size: 12px;
+}
+
+.info-item input {
+    display: block;
+    width: 372px;
+    height: 56px;
+    padding: 6px 12px;
+    font-size: 12px;
+    line-height: 17px;
+    margin: 12px auto 40px auto;
+    border: 1px solid #CCC;
+    outline: none;
+}
+
+.info-item .location-desc {
+    width: 290px;
+    margin: 28px auto;
+}
+
+.info-item .search {
+    margin: 116px auto 0 auto;
+}
+
+.footer {
+    border-top: 1px solid #e5e5e5;
+    height: 82px;
+    padding: 20px 14px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .left {
+    padding-left: 25px;
+    width: 350px;
+    height: 20px;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 3px;
+    background: url("img/language.png") no-repeat left 3px;
+}
+
+.footer .left a {
+    color: #000000;
+    letter-spacing: 3px;
+    /*去掉a标签的下划线*/
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.footer .right {
+    width: 629px;
+    height: 42px;
+    padding: 0 14px;
+}
+
+.footer .right a {
+    display: block;
+    margin-left:16px ;
+    height: 15px;
+    float: right;
+    font-size: 12px;
+    color: #000000;
+    text-decoration: none;
+}
+
+/*.footer {*/
+/*width: 100%;*/
+/*height: 537px;*/
+/*border-top: 1px solid #F2F2F2;*/
+/*display: flex;*/
+/*}*/
+
+/*.footer img {*/
+/*margin: 0 auto;*/
+/*padding-top: 80px;*/
+/*background-position: center;*/
+/*}*/
+
+/*.footer-box {*/
+/*margin: 0 auto;*/
+/*width: 512px;*/
+/*text-align: center;*/
+/*}*/
+
+/*.footer-box:nth-child(1) {*/
+/*border-right: 1px solid #F2F2F2;*/
+/*}*/
+
+/*.footer h5 {*/
+/*top: 15px;*/
+/*left: 20px;*/
+/*color: #000;*/
+/*font-size: 14px;*/
+/*line-height: 50px;*/
+/*font-weight: 500;*/
+/*letter-spacing: 2px;*/
+/*}*/
+
+/*.footer p {*/
+/*top: 15px;*/
+/*left: 20px;*/
+/*color: #000;*/
+/*font-size: 10px;*/
+/*font-weight: 100;*/
+/*line-height: 20px;*/
+/*padding: 20px 4px;*/
+/*}*/
+
+/*.footer-button {*/
+/*display: block;*/
+/*width: 250px;*/
+/*line-height: 21px;*/
+/*margin: 0 auto;*/
+/*padding: 10px 40px;*/
+/*background-color: rgba(0, 0, 0, 0.1);*/
+/*color: rgb(0, 0, 0);*/
+/*text-decoration: none;*/
+/*text-align: center;*/
+/*}*/
+/*.footer-button.search{*/
+/*margin-top: 116px;*/
+/*}*/
+/*.footer-box input{*/
+/*margin: 12px auto 60px auto;*/
+/*width: 372px;*/
+/*height: 56px;*/
+/*padding: 6px 12px;*/
+/*font-size: 12px;*/
+/*line-height: 17px;*/
+/*border: 1px solid #CCCCCC;*/
+/*!*去掉input标签鼠标点击时的外线*!*/
+/*outline: none;*/
+/*}*/
